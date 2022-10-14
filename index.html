@@ -14,60 +14,109 @@
                 text-align: center;
                border: 0;
                padding: 10px 10px;
-               font-weight:lighter;
+               font-weight:150px;
                font-size: 20px;
-               background-color: #DFFF00;
+                border-radius: 5px;
             }
-#footer{
-    text-align: center;
-    position: relative;
-}
+            #footer{
+                text-align: center;
+                position: relative;
+            }
             
             #headersection{
                 padding: 10px;
                 position: relative;
                 margin: 0;
                 text-align: center;
-                background-color: #DFFF00;
-                background-image: url('1663491302407.jpg');
-                background-size: 1600px 1100px;
-                width: 100%;
-                
+                background-image: url('./images/mypic.jpg');
+                background-size: 100% 1100px;
+                height: 900px;
+            }
+            #headersection1{
+                position:fixed;
+                text-align:center;
+                margin-left:470px;
             }
             #name{
                 
                 margin-top: 25px;
                 text-align: center;
             }
-            #home{
+            #home:link,
+            #home:visited{
+                text-decoration: none;
+                flex: 0 0 auto;
+                padding: 2.5rem;
+            }
+            button:hover,button:active{
+                transform: scale(1.07);
+                background: #ddff00;
                 cursor: pointer;
             }
-            #home:hover{
-                background:#cce718 ;
-            }
+
             #hi{
                 
                 text-align: center;
                 margin-top: 300px;
                 margin-right: 700px;
                 margin-bottom: 200px;
+                position: relative;
+                font-size: larger;
             }
             #image{
-                margin-top: 100px;
+                margin-top: 200px;
                 float: right;
                 margin-left: 0px;
-                width: 50%;
+                width: 30%;
             }
             #about{
-                margin-top: 50px;
+                margin-top: 20px;
                 float: left;
                 margin-left: 0px;
-                width: 50%;
+                width: 60%;
             }
-            #img{
+            .mine{
+                width: 120px;
+                height: 150px;
+            }
+            .html{
+                width: 200px;
+                height: 110px;
+            }
+            .css{
                 width: 150px;
-                height: 170px;
+                height: 125px;
             }
+            .java{
+                width: 100px;
+                height: 120px;
+                margin-right:20px;
+            }
+            .python{
+                width: 90px;
+                height: 110px;
+            }
+            .js{
+                width: 180px;
+                height: 120px;
+                margin-left: -30px;
+            }
+            .mysql{
+                width: 120px;
+                height: 120px;
+                margin-left:-15px;
+            }
+            .eclipse{
+                width: 120px;
+                height: 120px;
+                margin-left:20px;
+            }
+            .node{
+                width: 120px;
+                height: 130px;
+                margin-left:20px;
+            }
+            
             #img2{
                 margin-left: 40px;
                 width: 100px;
@@ -97,7 +146,7 @@
     <body>
         <section id="headersection">
         <div id="headersection1">
-            <button id="home" type="button">HOME</button>
+            <a href="#headersection"><button id="home" type="button">HOME</button></a>
             <a href="#about1"><button id="home" type="button">ABOUT</button></a>
             <a href="#contact"><button id="home" type="button">CONTACT</button></a>
         </div>
@@ -109,23 +158,25 @@
     <div id="about2">
         <section id="about1">
             <div id="image">
-                <img src="nannu.jpg" alt="nannubasha"><br>
-                <P><B>NAME:</B>Syed NanuBasha</P>
-                <p><b>QUALIFICATION:</b>M.C.A</p>
-                <p><b>COMPLETION YEAR:</b>2022</p>
-                <p><b>CERTIFICATIONS:</b>Full Stack Java</p>
+                <img class="mine" src="nannu.jpg" alt="nannubasha"><br>
+                <P><B>NAME :</B>Syed NanuBasha</P>
+                <p><b>QUALIFICATION :</b>M.C.A</p>
+                <p><b>COMPLETION YEAR :</b>2022</p>
+                <p><b>CERTIFICATIONS :</b>Full Stack Java</p>
     
             </div>
             <div id="about">
                 <h1><b>ABOUT </b></h1><br>
                 <h3><b>TECHNICAL SKILLS :</b></h3><br><br>
-                <img id="img" src="images/java.png" alt="java">
-                <img id="img" src="images/python.png" alt="python">
-                <img id="img" src="images/html.png" alt="html">
-                <img id="img" src="images/css.png" alt="css"><br><br>
-                <img id="img" src="images/javascript.png" alt="javascript">
-                <img id="img" src="images/mysql.png" alt="mysql">
-                <img id="img" src="images/eclipse.png" alt="elcpise ide"><br><br><br>
+                <img class="java" src="images/java.png" alt="java">
+                <img class="python" src="images/python.png" alt="python">
+                <img class="html" src="images/html.png" alt="html">
+                <img class="css" src="images/css.png" alt="css"><br><br>
+                <img class="js" src="images/javascript.png" alt="javascript">
+                <img class="mysql" src="images/mysql.png" alt="mysql">
+                <img class="eclipse" src="images/eclipse.png" alt="elcpise ide">
+                <img class="node" src="./images/node.js" alt="node.js">
+                <br><br><br>
                 <h1><b>HOBBIES :</b></h1>
                 <ul>
                     <li><h4>WATCHING ANIME</h4></li>
